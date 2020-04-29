@@ -189,7 +189,7 @@
 <h1 id="博客搭建感想"><a href="#博客搭建感想" class="headerlink" title="博客搭建感想"></a>博客搭建感想</h1><blockquote>
 <p>博客搭建过程中遇到的问题 </p>
 </blockquote>
-<p>第一次接触到用hexo搭建博客，搭建的整个过程到处都充满疑惑，但是通过百度基本上都解决了。我是按照b站上的这个视频搭建的，视频中讲的比较详细但还是避免不了手笨的我总爱出错。</p>
+<p>第一次接触到用hexo搭建博客，搭建的整个过程到处都充满疑惑，但是通过百度基本上都解决了。我是按照b站上的<a href="https://search.bilibili.com/all?keyword=%E4%B8%80%E6%AD%A5%E4%B8%80%E6%AD%A5%E6%95%99%E4%BD%A0%E5%A6%82%E4%BD%95%E5%9C%A8win10%E4%B8%8A%E5%AE%8C%E6%88%90hexo%E5%8D%9A%E5%AE%A2&from_source=nav_search&spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.9" target="_blank" rel="noopener">这个</a>视频搭建的，视频中讲的比较详细但还是避免不了手笨的我总爱出错。</p>
 <img src="https://s1.ax1x.com/2020/04/29/Joj7g1.jpg" width=200 height=200 />
 
 <p>下面我就介绍几个自己遇到的问题并如何解决他们  </p>
@@ -197,6 +197,7 @@
 <li>4000端口无法查看<br>执行hexo d 后产生一大串的代码并且复制的地址在浏览器上显示无法访问，我的原因是在配置_config.yml文件时:之后少了空格。冒号之后一定要有空格，这是语法要求。<br>如果没有语法错误但任然没有办法访问，则是由于windows系统的4000端口被占用了，执行hexo s -p 5000命令即可访问。也可使用win +R打开cmd，输入命令netstat -aon|findstr “4000”,查看端口4000被哪个程序占用，然后输入命令tasklist|findstr “PID号”查看是哪个进程，然后输入taskkill /im “进程名”来终止该进程。</li>
 <li>图片无法显示<br>如果自己的图片无法显示，可以将图片上传到这里<a href="https://imgchr.com/login" target="_blank" rel="noopener">免费图片上传</a>，然后将生成的url复制到需要填的地址中即可加载图片。</li>
 </ol>
+<p><img src="https://s1.ax1x.com/2020/04/29/J7lVrq.gif" alt=""></p>
 
       
 
